@@ -105,7 +105,7 @@ body{
 }
 input[type='select']{
   font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
-  background-color: transparent;
+ 
  
 }
 
@@ -116,6 +116,7 @@ input[type='select']{
     width: 98%;
     padding: 6px ;
    border-bottom: 2px solid grey;
+   
    font-size: 17px;
 
 
@@ -140,6 +141,7 @@ form select{
    margin: 0 20px;
    padding: 0px 15px 8px;
    color: black;
+   background-color: white;
   
 }
 .disp-for{
@@ -239,6 +241,7 @@ form select{
     border: 0;
     outline: 0;
     color: #6C46B9;
+    background-color: white;
     padding-right: 9px;
   }
 
@@ -296,6 +299,7 @@ margin-top: 20px;
     outline: 0;
     border-bottom: 2px solid rgb(234, 228, 228);
    margin: 0 20px;
+   background-color: white;
    padding: 8px 45px 8px 0;
   }
 
