@@ -105,6 +105,7 @@ body{
 }
 input[type='select']{
   font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
+  background: transparent;
 }
 
 .search-ip input{
