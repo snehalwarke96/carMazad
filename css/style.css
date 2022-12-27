@@ -105,7 +105,8 @@ body{
 }
 input[type='select']{
   font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
-  background: transparent;
+  background-color: transparent;
+ 
 }
 
 .search-ip input{
@@ -116,6 +117,7 @@ input[type='select']{
     padding: 6px ;
    border-bottom: 2px solid grey;
    font-size: 17px;
+
 
 
 }
@@ -137,6 +139,8 @@ form select{
     border-bottom: 2px solid rgb(234, 228, 228);
    margin: 0 20px;
    padding: 0px 15px 8px;
+   color: black;
+  
 }
 .disp-for{
     width: 200px;
