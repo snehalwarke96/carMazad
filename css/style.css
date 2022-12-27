@@ -60,7 +60,7 @@ body{
     border: 1px solid #6B1D57;
     color:#6B1D57 ;
     border-radius: 6px;
-    padding: 8px ;
+    padding: 2px ;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -327,19 +327,25 @@ margin-top: 20px;
     border: 0;
     margin: 0;
     background: transparent;
+    /* background: yellow; */
     color: white;
     font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
     font-size: 16px;
-    text-align: center;
+    /* width: 90px;
+    margin: auto; */
+    width: 50%;
   }
   .form2-btn {
-    width: 85%;
-    margin: 20px auto 5px;
+    width: 80%;
+    margin: 18px auto 5px;
     background: linear-gradient(259deg, #6B1D57 0%, #33176C 100%);
     box-shadow: 0px 8px 8px #43425D40;
 border-radius: 6px;
+display: flex;
+align-items: center;
 
-padding: 10px 0;
+
+padding: 7px 0;
 
   }
   .search-btn2{
@@ -489,7 +495,7 @@ right: 9px;
 .car-para3 h3{
   color: #45454D;
   font-size: 17px;
-  font-family: 'Roboto' ,Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Condensed' ,Arial, Helvetica, sans-serif;
 
 }
 
@@ -500,7 +506,7 @@ right: 9px;
 .car-para4 span{
   font-size: 13px;
   color:#8FB946;
-  font-family: 'Roboto' ,Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Condensed' ,Arial, Helvetica, sans-serif;
 }
 
 .car-para4{
