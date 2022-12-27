@@ -1,0 +1,823 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    /* border: 1px solid; */
+}
+
+header{
+    width: 100%;
+    background-color: white;
+    font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
+}
+body{
+  background-color:#eee ;
+}
+
+.logo{
+    margin: 25px 0;
+}
+
+.header-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.list{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.list li{
+    list-style:none;
+    margin: 13px 28px;
+    padding: 10px;
+    /* background-color: aqua; */
+}
+.list  a{
+    text-decoration: none;
+    color:#6B1D57 ;
+    padding: 10px;
+}
+
+.user-img{
+    width: 15.4px;
+    cursor: pointer;
+    /* margin: 4px 5px 0; */
+}
+
+.sign-btn{
+    box-shadow: 0px 8px 8px #43425D40;
+    border: 1px solid #6B1D57;
+    color:#6B1D57 ;
+    border-radius: 6px;
+    padding: 8px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 120PX;
+    /* background-color: aqua; */
+}
+
+.active{
+    font-weight: 600;
+    position: relative;
+    color:#6B1D57 ;
+    /* background-color: aqua; */
+}
+.active::after{
+  content: "";
+  height: 3px;
+  width: 35px;
+  background-color: #6B1D57;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+   
+}
+
+
+/*  */
+.search-btn{
+    width: 23px;
+    /* margin: 10px; */
+  
+}
+
+.magnifying-btn{
+    background-color: transparent;
+    border: none;
+}
+
+.search-ip{
+    width: 70%;
+ 
+}
+input[type='select']{
+  font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
+}
+
+.search-ip input{
+    margin: 0 20px ;
+    border: none;
+    outline: 0;
+    width: 98%;
+    padding: 6px ;
+   border-bottom: 2px solid grey;
+   font-size: 17px;
+
+
+}
+
+form select{
+    font-size: 17px;
+}
+
+.form-group{
+    display: flex;
+   align-items: center;
+   
+
+}
+
+.sel-tym{
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid rgb(234, 228, 228);
+   margin: 0 20px;
+   padding: 0px 15px 8px;
+}
+.disp-for{
+    width: 200px;
+    text-align: end;
+    /* display: flex; */
+    /* background-color: aqua; */
+}
+.disp-for img{
+    width: 24px;
+   margin: 0 5px;
+   /* background-color: #6B1D57; */
+}
+
+
+/* checkbox */
+/* Customize the label (the container) */
+
+/* Customize the label (the container) */
+.checkclass {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    /* font-size: 22px; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkclass input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .checkclass:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkclass input:checked ~ .checkmark {
+    background: linear-gradient(#6B1D57,#33176C);
+    box-shadow: 0px 8px 8px #00000029;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkclass input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkclass .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .form-group-2{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    margin: 40px 0 10px;
+  }
+
+  .form-group-2 select , .form-adaptive select {
+    border: 0;
+    outline: 0;
+    color: #6C46B9;
+    padding-right: 9px;
+  }
+
+  /* ///////////////////////////////////////////////// */
+
+  #VEHICLES{
+    width: 100%;
+ 
+   
+    /* margin-top: 25px; */
+  }
+
+  .home-div{
+    display: flex;
+    width: 100%;
+    /* padding-top: 24px; */
+  
+    /* height: 100%; */
+  }
+
+  .form-div{
+    width: 20%;
+    height: fit-content;
+    box-shadow: 6px 12px 24px #44444414;
+border-radius: 6px;
+   
+margin-top: 20px;
+    background-color: white;
+    /* padding-top: 25px; */
+  }
+  .form-div form{
+  margin: 10px 0;
+  }
+
+  .rightdiv{
+    width: 80%;
+  }
+
+  .cardiv{
+   
+    /* height: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    margin-top: 5px;
+    /* background-color: #6C46B9; */
+  }
+
+  .sel-ip{
+    width: 80%;
+    /* background-color: #4eb946; */
+    font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid rgb(234, 228, 228);
+   margin: 0 20px;
+   padding: 8px 45px 8px 0;
+  }
+
+
+  .towip{
+    display: flex;
+    width: 84%;
+    margin: 0 10px;
+  }
+  .sel-ip2{
+    width: 50%;
+    font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid rgb(234, 228, 228);
+    margin: 0 0 0 10px ;
+    padding: 8px 30px 8px 0;
+  }
+
+  .form2-ip input {
+    border: 0;
+    outline: 0;
+    font-size: 16px; 
+    width: 80%;
+  }
+  .form2-ip {
+    border-bottom: 2px solid rgb(234, 228, 228);
+    margin: 20px 20px 5px;
+    
+  }
+
+  .form2-btn button{
+    border: 0;
+    margin: 0;
+    background: transparent;
+    color: white;
+    font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+  }
+  .form2-btn {
+    width: 85%;
+    margin: 20px auto 5px;
+    background: linear-gradient(259deg, #6B1D57 0%, #33176C 100%);
+    box-shadow: 0px 8px 8px #43425D40;
+border-radius: 6px;
+
+padding: 10px 0;
+
+  }
+  .search-btn2{
+    width: 23px;
+    margin:3px 30px 0 10px;
+  
+}
+
+.form2-btn img{
+  filter: invert();
+}
+
+.reset{
+  width: 80%;
+  margin: 0 auto 20px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  text-align: center;
+  /* background-color: aqua; */
+}
+.reset button{
+
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  border-bottom: 1px solid;
+
+}
+
+/* //////////////// */
+
+.car1{
+  width: 275px;
+  background-color: #FFFFFF;
+  box-shadow: 6px 12px 24px #44444414;
+  border-radius: 6px;
+  padding: 8px;
+  margin: 15px;
+ 
+}
+
+.car-title{
+  text-align: center;
+  background: transparent linear-gradient(264deg, #E73054 0%, #B94646 100%) 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  color: white;
+  font-size: 11px;
+  font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
+  padding: 5px 0 7px 0;
+  margin-bottom: 8px;
+  width: 261px;
+}
+
+.car-img{
+  background: url(../images/2019-Toyota-Camry-Driving-on-Bridge.png);
+  width: 261px;
+  height: 208px;
+  background-position: center;
+  background-repeat: no-repeat;
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+ position: relative;
+ margin-bottom: 12px;
+
+}
+
+.img2{
+  background: url(../images/car2_Teaser_alt.png);
+}
+.img3{
+  background: url(../images/car3_424x-.png);
+}
+.img4{
+  background: url(../images/cart5-toyota-camry.png);
+}
+
+.staroncar{
+  position: absolute;
+  right: 14px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.hamdiv{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 15px #A375FFB5;
+border-radius: 10px;
+opacity: 0.9;
+width: 40px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+/* text-align: center; */
+position: absolute;
+bottom: 9px;
+right: 9px;
+}
+
+.hammeroncar{
+  filter:invert(1) ;
+}
+
+.car-para1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
+  color: #45454D;
+  border-bottom: 1px solid #EBEBEB;
+  padding-bottom: 10px;
+}
+
+.car-para1 h2{
+  font-size: 17px;
+}
+.car-para1 p{
+  font-size: 14px;
+}
+
+.car-para2{
+  padding: 7px 0;
+  font-size: 14px;
+
+}
+
+.car-para1 img{
+  padding-right: 12px;
+}
+
+.car-para3{
+  justify-content: flex-start;
+  /* background-color: aqua; */
+  padding: 10px 0;
+}
+
+.car-para3 p{
+  color: #989898;
+  font-size: 11px;
+  font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
+}
+.car-para3 img{
+  padding-right: 19px;
+}
+.car-para3 h3{
+  color: #45454D;
+  font-size: 17px;
+  font-family: 'Roboto' ,Arial, Helvetica, sans-serif;
+
+}
+
+.car-para4 p{
+  font-size: 11px;
+  color: #989898;
+}
+.car-para4 span{
+  font-size: 13px;
+  color:#8FB946;
+  font-family: 'Roboto' ,Arial, Helvetica, sans-serif;
+}
+
+.car-para4{
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.car-par5{
+  border: none;
+  margin: 10px 0 0 0;
+}
+
+.carbtn{
+  background:linear-gradient(263deg, #8FB946 0%, #74B946 100%);
+border-radius: 3px;
+color: white;
+font-size: 11px;
+text-align: center;
+font-family: 'Poppins',Arial, Helvetica, sans-serif;
+padding:5px 0 7px ;
+position: relative;
+transition: 0.3s color;
+cursor: pointer;
+}
+
+
+.arrow{
+  width: 12px;
+  filter: invert(1);
+  position: absolute;
+  right: 10px;
+  transform: rotate(180deg);
+  transition: 0.6s transform ;
+}
+.arrowrot{
+
+  transform: rotate(0deg);
+  filter: invert(0);
+}
+.carbtnbg{
+  background:linear-gradient(263deg, #dce6cc 0%, #e8ede4 100%);
+  color:#74B946;
+  border: 2px solid #74B946;
+}
+.bidsclick{
+  /* background-color: aqua; */
+  height: 200px;
+}
+
+
+
+
+.bids{
+  /* background-color: aqua; */
+  margin-top: 7px;
+  color: #45454D;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.4s height;
+}
+.bidsclick{
+  /* background-color: aqua; */
+  height: 200px;
+}
+
+.bid1{
+  padding-top: 10px;
+}
+
+
+.bid1 p{
+  font-size: 11px;
+  font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
+}
+.bid1 img{
+  padding-right: 10px;
+}
+
+.bid1flex{
+  margin-top: 3px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
+  
+}
+
+.num{
+  padding-right: 10px;
+  font-size: 14px;
+  font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
+}
+
+.bidname{
+  font-size: 14px;
+  /* font-weight: 500; */
+  font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
+}
+.bidline{
+  border-bottom: 1px solid #EBEBEB;
+  padding-bottom: 10px;
+}
+
+.gotopage {
+  margin: 30px 26px;
+  display: flex;
+  justify-content: space-between;
+}
+.gotopage img {
+  width: 10px;
+  transform: rotate(90deg);
+}
+.gotopage span {
+  padding: 10px;
+  font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
+border-radius: 3px;
+width: 40px;
+text-align: center;
+cursor: pointer;
+}
+
+.spanactive{
+  background:linear-gradient(225deg, #6B1D57 0%, #33176C 100%);
+  color: white;
+}
+
+footer{
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  padding: 30px 0;
+  /* position: relative;
+  bottom: 0; */
+}
+
+footer div{
+  /* background-color: aqua; */
+  margin: auto;
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
+ justify-content: space-between;
+}
+
+.footerlinks a{
+  text-decoration: none;
+  font-size: 9px;
+  color: #22232B;
+  padding: 0 25px;
+}
+
+.footerque{
+  font-size: 10px;
+  color: #22232B;
+}
+ 
+.social img{
+  padding: 0 10px;
+  margin: 0 20px;
+}
+
+.ham{
+  width: 24px;
+  display: none;
+}
+
+.hamsign{
+  display: none;
+  box-shadow: 0px 8px 8px #43425D40;
+border: 1px solid #6B1D57;
+border-radius: 6px;
+padding: 10px 12px;
+}
+
+
+
+
+
+.fiter-pos{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  /* background-color: #74B946; */
+  justify-content: end;
+  position: sticky;
+
+bottom: 10%;
+}
+.filter{
+  width: 59px;
+height: 59px;
+
+border-radius: 50%;
+background:linear-gradient(219deg, #6B1D57 0%, #33176C 100%);
+box-shadow: 0px 0px 12px #9066E79C;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+.form-adaptive,.fiter-pos{
+  display: none;
+}
+
+
+@media screen and (max-width:700px) {
+  .container{
+    width: 100%;
+  }
+  nav, .disp-for{
+    display: none;
+  }
+  .ham,.hamsign,.form-adaptive,.fiter-pos{
+    display: block;
+  }
+  .fiter-pos{
+    display: flex;
+  }
+
+  .form-adaptive{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+  .header-div{
+    padding: 0 12px;
+    justify-content: space-between;
+  }
+  .header-form{
+    padding: 0 12px;
+  }
+  .form-group{
+    display: flex;
+
+    justify-content: space-between;
+  }
+  .search-ip,.sel-tym{
+    margin: 0;
+    /* width: fit-content; */
+  }
+  .search-ip input{
+   
+    width: 80%;
+  }
+.form-group-2{
+  /* flex-direction: column; */
+  flex-wrap:wrap;
+  font-size: 13px;
+  margin:20px 1px 0 0;
+}
+.form-adaptive img{
+ margin: 0 9px;
+}
+
+
+.form-group-2 select {
+  font-size: 13px; 
+}
+
+
+.form-div{
+  display: none;
+ 
+}
+.rightdiv{
+  /* display: none; */
+  /* background-color: #33176C; */
+  margin: auto;
+}
+.cardiv{
+  padding-left: 0;
+  justify-content: center;
+}
+.gotopage {
+  margin: 30px ;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.hide,.footerlinks,.footerque{
+  display: none;
+}
+.social img{
+  padding: 0 10px;
+  margin: 0;
+}
+.footerflex{
+  padding: 0 20px;
+}
+
+.checkclass {
+ 
+  padding-left: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.icon-width{
+  width: 24px;
+}
+
+.leftdiv{
+  width: 90%;
+ margin: 10px auto;
+  transition: 0.6s width;
+ 
+}
+
+
+  
+  
+}
+
+
+  
+
+
+
+
